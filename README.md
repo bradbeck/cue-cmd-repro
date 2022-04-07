@@ -17,7 +17,7 @@ $ cue cmd hello
 could not create command definitions: command: field not allowed: command
 ```
 
-But the following invocation produce the expected result:
+But the following invocations produce the expected result:
 
 ```bash
 $ cue cmd hello :repro ./policy/data
