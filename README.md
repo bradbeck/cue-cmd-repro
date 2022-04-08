@@ -17,6 +17,17 @@ $ cue cmd hello
 could not create command definitions: command: field not allowed: command
 ```
 
+```bash
+$ cue cmd print ./policy/data
+could not create command definitions: command: field not allowed: command
+```
+
+```bash
+$ cd policy/data
+$ cue cmd print
+could not create command definitions: command: field not allowed: command
+```
+
 But the following invocations produce the expected result:
 
 ```bash
@@ -28,4 +39,14 @@ Hello
 $ cd policy/data
 $ cue cmd hello :repro .
 Hello
+```
+
+```bash
+$ cue cmd print :repro ./policy/data
+{"bar":"baz"}
+```
+
+```bash
+$ cue cmd print :repro .
+{"bar":"baz"}
 ```
