@@ -5,6 +5,9 @@ import (
     "tool/cli"
 )
 
+// currently only emitted at the data level
+foo?: _
+
 command: {
     hello: cli.Print & {text: "Hello"}
     print: cli.Print & {

@@ -47,6 +47,7 @@ $ cue cmd print :repro ./policy/data
 ```
 
 ```bash
+$ cd policy/data
 $ cue cmd print :repro .
 {"bar":"baz"}
 ```

@@ -1,3 +1,1 @@
 package repro
-
-foo: _
