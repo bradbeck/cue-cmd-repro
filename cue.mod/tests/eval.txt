@@ -1,0 +1,7 @@
+# Verify that eval works as expect
+
+cue cmd print :repro ./policy/data
+cmp stdout $WORK/stdout.golden
+
+-- stdout.golden --
+{"bar":"baz"}
